@@ -1,14 +1,14 @@
-import { throwExpression } from "../shared/utils";
+//import { throwExpression } from "../shared/utils";
 
-const getEnvVariable = (key: string): string => {
-  if (typeof window !== 'undefined') {
-    // Client-side
-    return (window as any).__ENV__?.[key] || '';
-  } else {
-    // Server-side
-    return process.env[key] || '';
-  }
-};
+// const getEnvVariable = (key: string): string => {
+//   if (typeof window !== 'undefined') {
+//     // Client-side
+//     return (window as any).__ENV__?.[key] || '';
+//   } else {
+//     // Server-side
+//     return process.env[key] || '';
+//   }
+// };
 
 // export const EXAMPLE_MOVE_PACKAGE_ID = getEnvVariable('NEXT_PUBLIC_EXAMPLE_MOVE_PACKAGE_ID');
 // export const API_HOST = getEnvVariable('NEXT_PUBLIC_API_HOST');
