@@ -1,8 +1,6 @@
 import { getByCodeKV, getByKeyKV } from "client";
 import Loading from "components/loading";
 import { GetServerSideProps } from "next";
-import getByKey from "./api/share/getByKey";
-import { redirect } from "next/navigation";
 
 
 

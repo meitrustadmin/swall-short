@@ -1,5 +1,4 @@
 import { GetServerSideProps } from "next";
-import Loading from "components/loading";
 
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
