@@ -1,6 +1,7 @@
 import { getByCodeKV, getByKeyKV } from "client";
 import Loading from "components/loading";
 import { GetServerSideProps } from "next";
+import Head from "next/head";
 
 
 
@@ -19,7 +20,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
             return {
                 redirect: {
                   destination: value,
-                  permanent: true,
+                  permanent: false,
                 },
               }
         }
@@ -28,8 +29,17 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     return {props: { slug }};
 };
 
-export default function Home() {
+export default function Home({ slug }: { slug: string }) {
   return (
-    <Loading text="Loading..." />
+    <>
+    <Head>
+      <title>Redirecting...</title>
+      <meta property="og:title" content="Redirecting you to your destination" />
+      <meta property="og:description" content="You'll be redirected momentarily" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`https://go.swall.xyz/${slug}`} />
+    </Head>
+    <Loading text="Redirecting..." />
+  </>
   );
 }
