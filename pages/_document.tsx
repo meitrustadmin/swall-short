@@ -10,8 +10,8 @@ export default function Document() {
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://mywebsite.com/" />
-            <meta property="og:title" content="My Website" />
-            <meta property="og:description" content="Welcome to my awesome website" />
+            <meta property="og:title" content="CTA Header" />
+            <meta property="og:description" content="CTA Content" />
             <meta property="og:image" content="https://mywebsite.com/images/og-image.jpg" />
             
             {/* Twitter */}
@@ -20,11 +20,11 @@ export default function Document() {
             <meta property="twitter:title" content="My Website" />
             <meta property="twitter:description" content="Welcome to my awesome website" />
             <meta property="twitter:image" content="https://mywebsite.com/images/twitter-image.jpg" />
-      </Head>
-      <body className="antialiased">
-        <Main />
-        <NextScript />
-      </body>
+        </Head>
+        <body className="antialiased">
+            <Main />
+            <NextScript />
+        </body>
     </Html>
   );
 }
