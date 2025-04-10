@@ -29,7 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     return {props: { slug,  targetUrl: null  }};
 };
 
-export default function Home({ slug, targetUrl }: { slug: string, targetUrl: string | null }) {
+export default function Home({ slug }: { slug: string }) {
   return (
     <>
     <Head>
