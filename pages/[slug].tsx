@@ -4,9 +4,6 @@ import { GetServerSideProps } from "next";
 import Head from "next/head";
 
 
-
-
-
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
     const { slug } = context.params as { slug: string }
     console.log('code', slug);
