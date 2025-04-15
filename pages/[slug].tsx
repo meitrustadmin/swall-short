@@ -34,7 +34,7 @@ export default function Home({ slug }: { slug: string }) {
       <meta property="og:title" content="Redirecting you to your destination" />
       <meta property="og:description" content="You'll be redirected momentarily" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://go.swall.xyz/${slug}`} />
+      <meta property="og:url" content={`https://go1.swall.xyz/${slug}`} />
     </Head>
     <Loading text="Redirecting..." />
   </>
